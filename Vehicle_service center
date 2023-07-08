@@ -1,0 +1,165 @@
+class service_center:
+    def center_details(rp):
+        print("\t\t\t\t HONDA SERVICE CENTER")
+        print("\t\t\t\t Since-1997")
+        print("\t\t\t\t www.Servicebuddy.com")
+        print("\n\n\t\t\t\t\tMENU")
+    def menu(rp):
+        x=["car","bus","bike","scooty","cycle"]
+        for k in x:
+            print("\n\n",k)
+    def car(rp):
+        x=["full service","gear box","Ac service","breaks"]
+        y=[800,500,350,650]
+        car_={"Service types":x,"price":y}
+        import pandas as pd
+        df=pd.DataFrame(car_)
+        print("\n\nServive type \n\n")
+        print(df)
+        d=[]
+        while x:
+            x=True
+            b=int(input("Enter the value position : "))
+            c=int(input("Enter the times:"))
+            z=car_["price"][b]
+            y=z*c
+            d.append(y)
+            x=input("you want any other service(yes/no):")
+            if(x=="no"):
+                print("thank you")
+                break
+        t=sum(d)
+        m=(sum(d)*0.05)
+        k=t+m
+        print("servicetax = 5%")
+        print("Total Amount:",t,"Rupees")
+        print("Total Amount Including Service Tax:",k,"Rupees")
+        
+    def bus(rp):
+        x=["full service","gear box","Ac service","breaks"]
+        y=[800,500,350,650]
+        bus_={"Service types":x,"price":y}
+        import pandas as pd
+        df=pd.DataFrame(bus_)
+        print("\n\nServive type \n\n")
+        print(df)
+        d=[]
+        while x:
+            x=True
+            b=int(input("Enter the value position : "))
+            c=int(input("Enter the times:"))
+            z=bus_["price"][b]
+            y=z*c
+            d.append(y)
+            x=input("you want any other service(yes/no):")
+            if(x=="no"):
+                print("thank you")
+                break
+        t=sum(d)
+        m=(sum(d)*0.05)
+        k=t+m
+        print("servicetax = 5%")
+        print("Total Amount:",t,"Rupees")
+        print("Total Amount Including Service Tax:",k,"Rupees")
+        
+    def bike(rp):
+        x=["full service","gear box","chain service","breaks"]
+        y=[800,500,350,650]
+        bike_={"Service types":x,"price":y}
+        import pandas as pd
+        df=pd.DataFrame(bike_)
+        print("\n\nServive type \n\n")
+        print(df)
+        d=[]
+        while x:
+            x=True
+            b=int(input("Enter the value position : "))
+            c=int(input("Enter the times:"))
+            z=bike_["price"][b]
+            y=z*c
+            d.append(y)
+            x=input("you want any other service(yes/no):")
+            if(x=="no"):
+                print("thank you")
+                break
+        t=sum(d)
+        m=(sum(d)*0.05)
+        k=t+m
+        print("servicetax = 5%")
+        print("Total Amount:",t,"Rupees")
+        print("Total Amount Including Service Tax:",k,"Rupees")
+        
+    def scooty(rp):
+        x=["full service","gear box","charing service","breaks"]
+        y=[800,500,350,650]
+        scooty_={"Service types":x,"price":y}
+        import pandas as pd
+        df=pd.DataFrame(scooty_)
+        print("\n\nServive type \n\n")
+        print(df)
+        d=[]
+        while x:
+            x=True
+            b=int(input("Enter the value position : "))
+            c=int(input("Enter the times:"))
+            z=scooty_["price"][b]
+            y=z*c
+            d.append(y)
+            x=input("you want any other service(yes/no):")
+            if(x=="no"):
+                print("thank you")
+                break
+        t=sum(d)
+        m=(sum(d)*0.05)
+        k=t+m
+        print("servicetax = 5%")
+        print("Total Amount:",t,"Rupees")
+        print("Total Amount Including Service Tax:",k,"Rupees")
+        
+    def cycle(rp):
+        x=["full service","gears","tyres service","breaks"]
+        y=[800,500,350,650]
+        cycle_={"Service types":x,"price":y}
+        import pandas as pd
+        df=pd.DataFrame(cycle_)
+        print("\n\nServive type \n\n")
+        print(df)
+        d=[]
+        while x:
+            x=True
+            b=int(input("Enter the value position : "))
+            c=int(input("Enter the times:"))
+            z=cycle_["price"][b]
+            y=z*c
+            d.append(y)
+            x=input("you want any other service(yes/no):")
+            if(x=="no"):
+                print("thank you")
+                break
+        t=sum(d)
+        m=(sum(d)*0.05)
+        k=t+m
+        print("servicetax = 5%")
+        print("Total Amount:",t,"Rupees")
+        print("Total Amount Including Service Tax:",k,"Rupees")
+        ----------------------------------------------------------------------------------------------------------------------------------------------------
+press shift +enter
+than write===>
+obj=service_center()
+obj.center_details()
+obj.menu()
+----------------------------------------------------------------shift+Enter------------------------------------------------------------------------------
+x=input("Enter the Type of vehicle : ")
+if x=="car":
+    print(obj.car())
+elif x=="bus":
+    print(obj.bus())
+elif x=="bike":
+    print(obj.bike())
+elif x=="scooty":
+    print(obj.scooty())
+elif x=="cycle":
+    print(obj.cycle())
+else:
+    print("wrong option: \nplease again choose the right option:")
+----------------------------------------------------------------------------shift+Enter(code run)-------------------------------------------------------------------------
