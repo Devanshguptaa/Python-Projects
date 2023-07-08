@@ -1,0 +1,60 @@
+a=input("Enter the type of error:-")
+if a== "NameError":
+    name = "Jack"
+    print("My Name is :",jack)
+elif a== "ZeroDivisionError":
+    x = int(input("Enter The Value of x :"))
+    y = int(input("\nEnter The Value of y :"))
+    div = x/y
+    print("\nThe Final Result is :",div)
+elif a=="IndexError":
+    lst_name = input("Enter The Names :").split()
+    print("\nThe Length of Lst :",len(lst_name))
+    print("\nThe Pos of Lst Start From 0 To",len(lst_name)-1)
+    print(lst_name)
+    pos = int(input("\nEnter The Value To View The Element :"))
+    print("\nResult is :",lst_name[pos])
+elif a=="TypeError":
+    def add(a,b):
+        return a+b
+    print("Result is :",add())
+elif a=="ValueError":
+    def evenodd():
+        no = int(input("\nEnter The No :"))
+        if no%2==0:
+            print(no,"is Even")
+        else:
+            print(no,"is Odd")
+        
+    evenodd()
+
+elif a=="FileNotFoundError":
+    def files():
+        file = open(input("Enter The Path :"),input("\nEnter The Mode :"))
+        print(file.read())
+    
+    files()
+elif a=="FileExistsError":
+    def files():
+        file = open(input("Enter The Path :"),input("\nEnter The Mode :"))
+        print(file.read())
+    
+    files()
+elif a=="KeyError":
+    def dframe():
+        
+        l1 = input("Enter The Name :").split()
+        l2 = input("Enter The Address :").split()
+        import pandas as pd
+
+        df = pd.DataFrame({"Name":l1,"Address":l2})
+
+        print(df)
+    
+        key = input("\nEnter The Key To View The Values :")
+        print("\n-----\n")
+        print(df[key])
+    
+    dframe()
+ -------------------------------------------------------------------------------------------------------------------------------------------------------   
+
